@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MenuPausa : MonoBehaviour
 {
-    [Serializable] private GameObject BotonPausa;
-    [Serializable] private GameObject MenuPausaUI;
+    [SerializeField] private GameObject BotonPausa;
+    [SerializeField] private GameObject MenuPausaUI;
     public static bool JuegoPausado = false;
 
     void Update()
