@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ========== UNITY ==========
 [Ll]ibrary/
 [Tt]emp/
@@ -99,3 +100,11 @@ npm-debug.log
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+=======
+/Library/
+/Temp/
+/Obj/
+/Build/
+*.csproj
+*.sln
+>>>>>>> origin/master
