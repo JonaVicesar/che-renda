@@ -9,8 +9,7 @@ public class EnergyManager : MonoBehaviour
     [Header("Referencias UI")]
     public Slider energySlider;
     public TextMeshProUGUI energyText;
-    public Image fillImage;
-
+ 
     [Header("Colores")]
     public Color positiveColor = Color.green;
     public Color warningColor = Color.yellow;
@@ -116,7 +115,6 @@ public class EnergyManager : MonoBehaviour
         if (totalEnergyGenerated <= 0)
         {
             energySlider.value = 0;
-            fillImage.color = criticalColor;
             return;
         }
 
@@ -124,23 +122,6 @@ public class EnergyManager : MonoBehaviour
         float energyPercentage = Mathf.Clamp01(availableEnergy / totalEnergyGenerated);
         energySlider.value = energyPercentage;
 
-        // Cambiar color según el estado
-        if (availableEnergy < 0)
-        {
-            fillImage.color = criticalColor;
-        }
-        else if (energyPercentage <= criticalThreshold)
-        {
-            fillImage.color = criticalColor;
-        }
-        else if (energyPercentage <= warningThreshold)
-        {
-            fillImage.color = warningColor;
-        }
-        else
-        {
-            fillImage.color = positiveColor;
-        }
     }
 
     /// <summary>
