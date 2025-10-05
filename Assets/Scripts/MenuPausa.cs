@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuPausa : MonoBehaviour
 {
@@ -36,6 +37,11 @@ public class MenuPausa : MonoBehaviour
         MenuPausaUI.SetActive(false);
         JuegoPausado = false;
     }
+    public void Opciones()
+    {
+        Debug.Log("Cargar Menu Opciones");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+    }
     public void MenuInicial()
     {
         Debug.Log("Cargar Menu Principal");
@@ -43,6 +49,6 @@ public class MenuPausa : MonoBehaviour
         BotonPausa.SetActive(false);
         MenuPausaUI.SetActive(false);
         JuegoPausado = false;
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MenuInicial");
+        SceneManager.LoadScene(0);
     }
 }
