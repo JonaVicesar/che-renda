@@ -15,6 +15,6 @@ public class Estaciones : MonoBehaviour
     }
     public void Marte()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(4);  
     }
 }
