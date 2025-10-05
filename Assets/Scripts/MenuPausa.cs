@@ -40,7 +40,6 @@ public class MenuPausa : MonoBehaviour
     public void Opciones()
     {
         Debug.Log("Cargar Menu Opciones");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
     public void MenuInicial()
     {
