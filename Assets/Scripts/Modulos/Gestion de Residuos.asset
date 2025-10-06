@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab7619438e052f348a066fcf31fe347b, type: 3}
-  m_Name: generador
+  m_Name: Gestion de Residuos
   m_EditorClassIdentifier: 
-  moduleName: generador de energia
-  isEnergyGenerator: 1
-  energyValue: 1000
-  capacity: 11
-  oxygenGeneration: 1111
-  description: blabla
+  moduleName: Gestion de Residuos
+  isEnergyGenerator: 0
+  energyValue: -277
+  capacity: 4
+  oxygenGeneration: 100
+  description: .
